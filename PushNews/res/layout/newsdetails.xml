@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsdetails_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 ，后期RelativeLayout加背景，他的高度暂时设为60，返回按钮对应的背景及事件 ,有警告的地方要修改 -->
+
+    <RelativeLayout
+        android:id="@+id/newsdetails_titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/titlebar" >
+
+        <ImageButton
+            android:id="@+id/newsdetails_back_bn"
+             android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="4dip"
+            android:background="@drawable/btn_common_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/newsdetails_titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/newsdetails_collect_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/collect_normal" />
+    </RelativeLayout>
+    <!-- 标新闻详细内容 -->
+
+    <ViewFlipper
+        android:id="@+id/newsdetails_ViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/newsdetails_titlebar_layout" >
+    </ViewFlipper>
+
+</RelativeLayout>

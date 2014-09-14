@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/cmls_Rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/titlebar" >
+
+        <ImageButton
+            android:id="@+id/cmls_ibt_back"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="4dip"
+            android:background="@drawable/btn_common_selector" />
+
+        <TextView
+            android:id="@+id/cmls_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="频道管理"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/btn_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cmls_Rlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape" >
+
+        <ListView
+            android:id="@+id/cmls_list_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="1dp"
+            android:divider="@color/gray"
+            android:dividerHeight="0.5dp"
+            android:fadeScrollbars="true" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

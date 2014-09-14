@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="degree">
+       
+        <item>一般</item>
+        <item>较紧急</item> 
+        <item>紧急</item> 
+        <item>很紧急</item> 
+        <item>超紧急</item> 
+    </string-array>
+</resources>

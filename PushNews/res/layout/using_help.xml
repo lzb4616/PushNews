@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/using_help_Rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/titlebar" >
+
+        <ImageButton
+            android:id="@+id/using_help_ibt_back"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="4dip"
+            android:background="@drawable/btn_common_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/using_help_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="使用帮助"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/using_help_Rlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape" >
+
+        <TextView
+            android:id="@+id/using_help_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="1.根据自己的兴趣关注感兴趣的频\n   道。\n2.如果你是管理员，可以登录账\n   号，随时随地地向用户发送紧急消\n   息。"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

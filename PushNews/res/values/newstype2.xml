@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="newstype2">
+       
+        <item>国内</item>
+        <item>国际</item> 
+    </string-array>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_right"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title"
+        android:padding="1dp" >
+
+        <Button
+            android:id="@+id/layout_right_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="登陆账号"
+            android:textColor="@color/white"
+            android:textSize="20sp" 
+            android:background="@drawable/login"/>
+    </RelativeLayout>
+
+    <com.pushnews.app.slidingmenu.FixListViewLinearLayout
+        android:id="@+id/mylaout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        
+        android:visibility="visible"
+         >
+
+        <ListView
+            android:id="@+id/lvRight"
+            android:background="@drawable/menu_background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/gray"
+            android:dividerHeight="0.5dp" >
+        </ListView>
+    </com.pushnews.app.slidingmenu.FixListViewLinearLayout>
+
+</LinearLayout>
